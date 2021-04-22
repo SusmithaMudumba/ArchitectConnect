@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Architect connect</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src="app.js"></script>
+<!-----------------------------------IMAGES AND LOGOS------------------------------------------->
+    <div>
+        
+<!------------------------------------------------------------------------------------------------>
+<!-----------------MAIN HEADING-------------------------->
+        <!-- <div class="heads">
+            <h1>ARCHITECT CONNECT</h1>
+            
+        </div> -->
+<!------------------------------------------------------>
+    </div>
+<!--TEXTFIELDS AND FORMS-------------------------------->
+    <!-- <form class="inputs">
+        
+        <input type="text" id="first_name" name="uname" placeholder="username"><br><br>
+       
+        <input type="text" id="last_name" name="lname" placeholder="password"><br><br>
+        
+
+      </form> -->
+
+
+
+<!------------------------------------------------------>
+<!----------------BUTTONS------------------------------->
+        <!-- <div class ="but">
+            <button class="sgn1" onclick="sinup()">Sign-In</button>
+            <a href="registration.html">
+                <button class="sgn2">Sign-up</button>
+            </a>
+        </div> -->
+<!------------------------------------------------------>
+      
+
+    <!-- <img src="wallpapertip_architecture-wallpaper_1090816 (1).jpg" class="arch">
+    <img src="compass-tool-flat-icon-vector-21191758.jpg" class="rounded-circle" id="logo"> -->
+    <div class="">
+        <img src="wallpapertip_architecture-wallpaper_1090816 (1).jpg" class="arch">
+        <img src="compass-tool-flat-icon-vector-21191758.jpg" class="rounded-circle" id="logo">
+    </div>
+    <div class="container  col-4">
+
+        <div class="">
+            <h1>ARCHITECT CONNECT</h1>    
+            <br><br>
+        </div>
+        
+        <form action="/signIn" method="POST">
+            <div class="form group">
+                <label for="uname">Username</label>
+                <input type="text" id="uname"  name="uname" class="form-control" placeholder="username">
+            </div>
+
+            <div class="form group">
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd"  name="pwd" class="form-control" placeholder="password">
+            </div>
+
+            <br>
+            <div class="form group">
+                <button type="submit" class="btn btn-primary" >Sign-In</button>
+            <!-- </div>
+
+            <br>
+            <div class="form group"> -->
+                <a href="/register" class="btn btn-success">Sign-up</a> 
+            </div>
+            
+            
+        
+        </form>
+    </div>
+
+</body>
+
+<!---------------MAIN PAGE STYLING---------------------->
+<style>
+.heads{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 500px;
+    left: 660px;
+}
+#first_name{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: -50px;
+    bottom:-320px;
+}
+
+#last_name{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: -30%;
+    bottom:-300px;
+}
+
+#logo{
+   
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    left: 740px;
+    bottom: 600px;
+}
+.arch{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+
+}
+
+.inputs{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    left: 810px;
+    bottom: 580px;
+}
+.but{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    left: 765px;
+    bottom: 280px;
+    
+}
+
+.sgn1{
+    background-color: #000000;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  position: fixed;
+  left: 760px;
+  top:730px;
+  
+}
+.sgn1:hover {opacity: 1}
+
+.sgn2{
+    background-color: #000000;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  position: fixed;
+  left: 850px;
+  top:730px;
+}
+.sgn2:hover {opacity: 1}
+
+</style>
+<!-----------------------SCRIPT------------------->
+<script>
+    
+    function sinup() {
+      alert("Function not yet implemented");
+     
+    }
+</script>
+<!----------------------------------------------->
+</html>

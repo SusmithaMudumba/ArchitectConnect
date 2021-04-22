@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architect connect</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1 center">Architech Connect</span>
+        </nav>
+
+
+
+        <section class="section works" id="works">
+            <div class="">
+                <div style="width: 30%; float: left; padding: 25px;">
+                    <div class="works-image" style="margin: auto;">
+                        <img src="<%=fname.first_name%>.jpg" class="rounded-circle" style="width: 300px; height: 300px;" alt=""> 
+                        
+                        <br>
+                        <br>
+                        <button>Account</button>
+                        
+                        <br><br><br>
+                        <!-- <a href="/register" class="btn btn-success">Sign-up</a>  -->
+
+                        <a href="/logout" class="btn ">Logout</button>
+
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div style="width: 70%; float: left;">
+                    
+                    <div class="item-info">
+                        <!-- <h4 class="item-name">Some Title here</h4> -->
+                        <!-- <p class="item-type">Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea </p> -->
+                        <p class="item-type">First Name - <%= fname.first_name%></p>
+                        <p class="item-type">Last Name - <%= fname.last_name%></p>
+                        <p class="item-type">E-Mail ID - <%= fname.email_address%></p>
+                        <p class="item-type">Type of Architect - <%= fname.types_of_architects%></p>
+                        
+                    </div>
+                </div>
+                </div>        
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
