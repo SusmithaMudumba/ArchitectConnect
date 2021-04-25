@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
+<body background="wallpapertip_architecture-wallpaper_1090816 (1).jpg" class="arch">
     <div>
         <nav class="navbar navbar-light bg-light">
-            <span class="navbar-brand mb-0 h1 center">Architech Connect</span>
+            <span class="navbar-brand mb-0 h1 container text-center">Architect Connect</span>
         </nav>
 
 
@@ -19,26 +19,23 @@
         <section class="section works" id="works">
             <div class="">
                 <div style="width: 30%; float: left; padding: 25px;">
-                    <div class="works-image" style="margin: auto;">
+                    <div class="works-image container text-center" style="margin: auto; ">
                         <img src="<%=fname.first_name%>.jpg" class="rounded-circle" style="width: 300px; height: 300px;" alt=""> 
                         
                         <br>
                         <br>
-                        <button>Account</button>
+                        <div class="">
+                            <a href="/account" class="btn btn-primary">Account</a>
+                            <a href="/logout" class="btn btn-danger">Logout</a>
+                            <div class="overlay"></div>
+                        </div>
                         
-                        <br><br><br>
-                        <!-- <a href="/register" class="btn btn-success">Sign-up</a>  -->
-
-                        <a href="/logout" class="btn ">Logout</button>
-
-                        <div class="overlay"></div>
                     </div>
                 </div>
                 <div style="width: 70%; float: left;">
                     
-                    <div class="item-info">
+                    <div class="item-info" style="font-family: 'Courier New', Courier, monospace; color: rgb(2, 2, 12); padding: 60px; font-size: large;">
                         <!-- <h4 class="item-name">Some Title here</h4> -->
-                        <!-- <p class="item-type">Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea Description should be herea </p> -->
                         <p class="item-type">First Name - <%= fname.first_name%></p>
                         <p class="item-type">Last Name - <%= fname.last_name%></p>
                         <p class="item-type">E-Mail ID - <%= fname.email_address%></p>

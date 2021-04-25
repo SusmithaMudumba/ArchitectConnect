@@ -5,6 +5,9 @@ app.use(express.static("public"));
 app.set("view engine","ejs");
 app.use(bodyParser.urlencoded({extended:true}));
 var session = require('express-session');
+// var alert = require('alert');  
+// import alert from 'alert';
+
 
 var sql = require("mssql");
 app.use( express.static( "public" ) );
@@ -219,8 +222,9 @@ app.post('/signIn', function(request, response) {
         });
         
     }else {
-        response.send('Please enter Username and Password!');
-        response.end();
+         response.send('Please enter Username and Password!');
+         response.end();
+        
     }
 		
 });
